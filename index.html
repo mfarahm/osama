@@ -993,8 +993,16 @@ function showPopup(message,options={}){
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getDatabase, ref, push, onValue, remove, update, get, set } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
-  const firebaseConfig={apiKey:"AIzaSyA5xYXrZrrwA6ws8WRyMr2dIHXlWBVn3FE",authDomain:"aaaaaa-5b453.firebaseapp.com",databaseURL:"https://aaaaaa-5b453-default-rtdb.europe-west1.firebasedatabase.app",projectId:"aaaaaa-5b453",storageBucket:"aaaaaa-5b453.firebasestorage.app",messagingSenderId:"722031681124",appId:"1:722031681124:web:0d45ca14b0413d9954c971"};
-  const ADMIN_PASSWORD="333555";
+  const firebaseConfig = {
+  apiKey: "AIzaSyB1h25lCeUcQDJA5BW8f5yrx_PJW1-PSME",
+  authDomain: "debiki-thesis-congrats.firebaseapp.com",
+  databaseURL: "https://debiki-thesis-congrats-default-rtdb.firebaseio.com",
+  projectId: "debiki-thesis-congrats",
+  storageBucket: "debiki-thesis-congrats.firebasestorage.app",
+  messagingSenderId: "1001197995662",
+  appId: "1:1001197995662:web:0b598a4a335d4a8551abdf"
+};
+  const ADMIN_PASSWORD="333666";
   const app=initializeApp(firebaseConfig);
   const db=getDatabase(app);
   const congratsRef=ref(db,"congrats");
